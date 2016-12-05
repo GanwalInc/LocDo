@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/location_todo_list_item"
+    android:layout_margin="@dimen/list_side_margin"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    >
+    <TableRow>
+        <TextView android:id="@+id/list_item_nameTextView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            style="@style/ListItemMainText"
+            android:text="Name"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Location Alarm"
+            android:scaleType="center"
+            android:src="@drawable/ic_alarm_on_black_48dp"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/list_item_alarmImage"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView android:id="@+id/list_item_dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ListItemSecText"
+            android:layout_marginEnd="15dp"
+            android:text="Jan 1st"
+            />
+
+        <CheckBox android:id="@+id/list_item_doneCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:focusable="false"
+            android:layout_gravity="end"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:id="@+id/list_item_summaryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ListItemSecText"
+            android:layout_span="4"
+            android:textAlignment="viewStart"
+            android:text="Summary" />
+    </TableRow>
+</TableLayout>

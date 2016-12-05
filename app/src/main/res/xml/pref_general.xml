@@ -1,0 +1,21 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="pref_sort_order"
+        android:title="@string/pref_sort_order_label"
+        android:summary="@string/pref_sort_order_summary"
+        android:defaultValue="1"
+        android:entries="@array/sort_order_titles"
+        android:entryValues="@array/sort_order_values"
+        android:dialogTitle="@string/dialog_title_list_preference"
+        android:layout="@layout/pref_layout"    />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_show_completed"
+        android:summary="@string/pref_show_completed_summary"
+        android:title="@string/pref_show_completed_title">
+    </CheckBoxPreference>
+
+
+</PreferenceScreen>

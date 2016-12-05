@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/toolbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="@dimen/app_bar_elevation">
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:id="@+id/msg_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/error_banner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppBodyText"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:background="@color/error_msg_background"
+                tools:text="@string/no_network_label"
+                android:text="@string/no_network_label" />
+
+            <TextView
+                android:id="@+id/empty_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTitleText"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:text="@string/list_no_item_label"
+                android:text="@string/list_no_item_label" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_anchor="@+id/msg_banner"
+                app:layout_anchorGravity="end"
+                android:gravity="bottom"
+                android:layout_weight="1"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/newFAB"
+                android:contentDescription="@string/add_new_label"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:src="@drawable/ic_add_circle_white_48dp"
+                android:clickable="true"
+                android:layout_gravity="bottom|right"
+                app:layout_anchor="@+id/recycler_view"
+                app:layout_anchorGravity="bottom|right"
+                android:elevation="20dp"
+                />
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>
+

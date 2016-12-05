@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_item"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/widget_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/task_id"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:gravity="left|start"
+        android:visibility="invisible"
+        tools:text="ID"/>
+
+    <TextView android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ListItemMainText"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/widget_item_margin"
+            android:text="Name"
+            />
+
+    <TextView android:id="@+id/due_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             style="@style/ListItemSecText"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/widget_item_margin"
+            android:text="Jan 1st"
+            />
+
+</LinearLayout>

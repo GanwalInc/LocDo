@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_order_titles">
+        <item>Due Date(Sooner First)</item>
+        <item>Priority(High Priority First)</item>
+        <item>Name</item>
+    </string-array>
+    <string-array name="sort_order_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="priority_titles">
+        <item>Critical</item>
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+    <string-array name="priority_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>
+
+

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+    <!-- Save Button -->           
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/details_linear_layout"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+        <!-- Name -->
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/name_label"
+            android:text="@string/name_label" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_hint" />
+        <!-- Description -->
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/descr_label"
+            android:text="@string/descr_label" />
+
+        <EditText
+            android:id="@+id/descr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/descr_hint" />
+        <!-- Location -->
+        <CheckBox
+                android:id="@+id/enableLocationAlert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:contentDescription="@string/enable_location_alert_label"
+                android:text="@string/enable_location_alert_label" />
+
+        <!-- Enter Geo Fence Location -->
+
+        <Button
+            android:id="@+id/enterLocation"
+            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:contentDescription="@string/enter_location_label"
+                android:text="@string/enter_location_label" />
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/location_label"
+            android:text="@string/location_label" />
+
+        <EditText
+                android:id="@+id/location_descr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/location_descr_hint"/>
+
+        <!-- Radius -->
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/radius_label"
+            android:text="@string/radius_label" />
+
+        <EditText
+            android:id="@+id/radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/radius_hint"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/priority_label"
+            android:text="@string/priority_label" />
+        <Spinner
+            android:id="@+id/priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/priority_titles"
+            android:entryValues="@array/priority_values"
+            />
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/descr_label"
+            android:text="@string/duedate_label" />
+
+        <Button
+            android:id="@+id/dueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:contentDescription="@string/select_duedate_label"
+            android:text="@string/select_duedate_label" />
+
+        <CheckBox
+            android:id="@+id/completed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/completed_label" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/saveFAB"
+        android:contentDescription="@string/save_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_save_black_48dp"
+        android:layout_gravity="top|end"
+        app:layout_anchor="@id/detailScrollView"
+        app:layout_anchorGravity="top|right|end"/>
+
+</android.support.design.widget.CoordinatorLayout>

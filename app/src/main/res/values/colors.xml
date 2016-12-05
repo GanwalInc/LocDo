@@ -1,0 +1,44 @@
+<!-- File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <!--
+    <color name="photo_placeholder">#ccc</color>
+    <color name="theme_primary">#04561A</color>
+    <color name="theme_primary_dark">#04561A</color>
+    <color name="theme_accent">#04561A</color>
+    <color name="ltgray">#ffe0e0e0</color>
+    -->
+    <color name="primary">#00BCD4</color>
+    <color name="primary_dark">#0097A7</color>
+    <color name="primary_light">#B2EBF2</color>
+   <!--<color name="accent">#FFC107</color>-->
+    <color name="accent">#FCD356</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="priority_1_background">#F5B5D3</color>
+    <color name="priority_2_background">#F2C48F</color>
+    <color name="priority_3_background">#FFFFFF</color>
+    <color name="priority_4_background">#FFFFFF</color>
+
+    <color name="error_msg_background">#B6B6B6</color>
+
+</resources>
